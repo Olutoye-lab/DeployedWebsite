@@ -1,0 +1,35 @@
+{
+  "box1": {
+    "name": "National Medtech Foundation",
+    "text": "The National Medtech Hackathon was an insightful event, exploring innovative procedures in solving real life events affect millions of people globally",
+    "description": "During the event, my chosen case study concerned the lack of access to neonatal education in Nigeria, causing a sever increase in infant Mortality. A solution my team offered was an AI powered healthcare educational platform, capable of utilizing digital twin technology and edge AI systems to deliver a reliable education platform while combating the lack of internet access in remote areas "
+  },
+  "box2": {
+    "name": "KCS x Nucats",
+    "text": "This was a In-house challenge hosted by Kerridge Commercial systems. The case-studies consisted of developing various shared services aimed around the theme of various operation current occurring within the organisation",
+    "description": "My chosen project was a shared service, which displayed 3D visual information of the most optimal arrangement of items in a container. Soon after starting this project, I soon realised that this project was synonymous to an infamously difficult NP-hard problem in computer science, meaning the problem could only be solve in Non-deterministic Polynomial time. As a result I decided to develop a 2D box sorting algorithm using linear Probability and map the algorithm in 3D space. This project enabled the use of applied mathematical thinking in conjunction with advanced modeling in order to find a semi-optimised solution to an otherwise seemingly impossible problem."
+
+  },
+  "box3": {
+    "name": "Easy A x Polkadot",
+    "text": "The Easy A x Polkadot hackathon is a world class event, hosted in the heart of London. This event challenges renound participants from various backgrounds to program and pitch ideas based around upcoming Web3 technology ",
+    "description": "Easy A encouraged project from all areas of Web3, but required all projects to be based around the application of smart contracts. In a team of 4 our project was based around the implementation of giving users access to trade and exchange digital assets across multiple platforms in a variety of fields, ranging from decentralised finance to gaming, acting as a way to improve flexibility of exchange away from otherwise centralised systems"
+
+  },
+  "box4": {
+    "name": "Dreamcode",
+    "text": "The dreamcode hackathon was held in collaboration with `Stream`, an organisational collaboration of major water companies in the UK with the goal of improving UK water ways through data analysis.",
+    "description": "The hackathon touched on environmentally present issues, ranging from storm overflow, water pollution, and large scale flooding. My project being a platform which used readily available data on the local waterways, in order to identify possible causes of bacterial contamination, uniquely tailored to the water body. The platform engaged the use of Education, data communication, and incentive to local governmental bodies to aid citizen scientist to in providing viable solution in solving pressing environmental issues."
+
+  },
+  "box5": {
+  "name": "Imperial S-REPLS",
+  "text": "The South England Regional Programming Language Seminar was an event held at Imperial College London featuring the latest advancements in the semantics and information of programming languages.",
+    "description": "The event featured industry professionals from Kings College London, Meta, The university of Oxford, Cambridge and other Imperial researchers, speaking on programming languages in both theoretical and application areas  "
+  },
+  "box6": {
+  "name": "Imperial S-REPLS",
+  "text": "The South England Regional Programming Language Seminar was an event held at Imperial College London featuring the latest advancements in the semantics and information of programming languages.",
+  "description": "The event featured industry professionals from Kings College London, Meta, The university of Oxford, Cambridge and other Imperial researchers, speaking on programming languages in both theoretical and application areas  "
+  }
+}

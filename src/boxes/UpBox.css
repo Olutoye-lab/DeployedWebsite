@@ -1,0 +1,18 @@
+.float {
+    display: flex;
+    margin-left: 20vw;
+    width : 60vw;
+    height: 550px;
+    background-color: navajowhite;
+    border-radius: 40px;
+    cursor: cell;
+}
+.card-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card-header-top {
+    max-width: 350px;
+}
