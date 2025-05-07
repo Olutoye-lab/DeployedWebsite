@@ -7,4 +7,5 @@ import svgr from 'vite-plugin-svgr';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), jsconfigPaths(), svgr()],
+  base: process.env.VITE_BASE_PATH || "/DeployedWebsite"
 })
