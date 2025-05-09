@@ -22,8 +22,8 @@ import data from "./data.json";
 
 function App() {
     const [text, SetText] = useState("");
-    let distance = 0
-    let index = 1
+    const [distance, setDistance] = useState(0)
+    const [index, setIndex] = useState(1)
     const bgRef = useRef(null);
     const boxRef = useRef(null);
     const topRef = useRef(null);
@@ -55,18 +55,19 @@ function App() {
 
 
     const forward = contextSafe(() => {
-        console.log(distance)
-        distance = distance + boxSize + gapSize
-        console.log(distance)
+        setDistance(prev => prev + boxSize + gapSize)
+        setIndex(prev => prev - 1);
 
         if (distance >= (boxSize + gapSize)) {
-            distance = (boxSize + gapSize)
+            setDistance(boxSize + gapSize)
         }
-        index = index - 1;
         if (index < 0) {
-            index = 0
+            setIndex(0)
         }
 
+    });
+
+    useEffect( () => {
         const timeline = gsap.timeline();
         timeline.to(".box", {x: distance, duration: 0.5, opacity: 1})
             .fromTo([".background", ".top", ".bottom"], { opacity: 1 },
@@ -77,37 +78,22 @@ function App() {
                         gsap.to([".background", ".top", ".bottom"], {opacity: 1, duration: 0.5 })
                     }}, "<"
             );
-        timeline.play()
 
-    });
+        timeline.play()
+    },[distance])
 
     const back = contextSafe(() => {
-        console.log(distance)
-        distance = distance - boxSize - gapSize
-        console.log(distance);
-
-        index = (index + 1);
+        setDistance(prev => prev - boxSize - gapSize)
+        setIndex(prev => prev + 1);
 
         if (distance <= (boxSize + gapSize)*-4) {
-            distance = ((boxSize + gapSize)*-4)
+            setDistance((boxSize + gapSize)*-4)
         }
 
         if (index > arr.length - 1) {
-            index = arr.length - 1
+            setIndex(arr.length - 1)
         }
 
-        const timeline = gsap.timeline();
-        timeline.to(".box", {x: distance, duration: 0.5, opacity: 1})
-            .fromTo([".background", ".top", ".bottom"], { opacity: 1 },
-                {opacity: 0, duration: 0.3, onComplete: () => {
-                        bgRef.current.style.backgroundImage = `url(${arr[index]})`;
-                        topRef.current.style.backgroundColor = `${arr2[index]}`;
-                        bottomRef.current.style.backgroundColor = `${arr2[index]}`;
-                        gsap.to([".background", ".top", ".bottom"], {opacity: 1, duration: 0.5 })
-                    }}, "<"
-                );
-
-        timeline.play()
     })
 
     const expand = contextSafe((event) => {
