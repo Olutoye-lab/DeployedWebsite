@@ -14,5 +14,7 @@
     gap: 10px;
 }
 .card-header-top {
-    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
 }

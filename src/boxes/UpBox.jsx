@@ -24,7 +24,7 @@ function UpBox({props}) {
                                     <Avatar.Fallback name={props.name} />
                                 </Avatar.Root>
                                 <div className="card-header-top">
-                                    <Card.Title mt="2" height="40px">{props.name}</Card.Title>
+                                    <Card.Title mt="2" width="100%" height="40px" >{props.name}</Card.Title>
                                     <Card.Description >
                                         {props.text}
                                     </Card.Description>
