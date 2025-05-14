@@ -29,7 +29,7 @@ function UpBox({props}) {
                                     </Card.Description>
                                 </div>
                             </div>
-                            <Card.Description fontFamily="monospace" fontSize="15px">
+                            <Card.Description fontFamily="monospace" fontSize="15px" marginTop="20px">
                                 {props.description}
                             </Card.Description>
                         </Card.Body>
