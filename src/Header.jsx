@@ -5,6 +5,7 @@ import {gsap} from "gsap";
 import {ScrambleTextPlugin} from "gsap/ScrambleTextPlugin";
 import {useGSAP} from "@gsap/react";
 import LinkBox from "@/LinkBox.jsx";
+import Info from "../Info.jsx";
 
 
 function Header(){
@@ -50,7 +51,7 @@ function Header(){
                 </Button>
                 <ButtonGroup variant="surface" wrap="wrap" size="lg">
                         <div className="group-inner">
-                            <Button style={{ boxShadow: "10px 10px" }}>PROJECTS</Button>
+                            <Info></Info>
                             <Popout title={Publication} />
                             <LinkBox style={{ boxShadow: "10px 10px" }} />
                         </div>

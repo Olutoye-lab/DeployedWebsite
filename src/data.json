@@ -2,34 +2,31 @@
   "box1": {
     "name": "National Medtech Foundation",
     "text": "The National Medtech Hackathon was an insightful event, exploring innovative procedures in solving real life events affect millions of people globally",
-    "description": "During the event, my chosen case study concerned the lack of access to neonatal education in Nigeria, causing a sever increase in infant Mortality. A solution my team offered was an AI powered healthcare educational platform, capable of utilizing digital twin technology and edge AI systems to deliver a reliable education platform while combating the lack of internet access in remote areas "
+    "description": "During the event, my case study focused on the lack of access to neonatal education in Nigeria, which has led to a significant increase in infant mortality rates. My team proposed a solution: an AI-powered healthcare education platform that utilizes digital twin technology and Edge-AI systems. This platform aims to provide reliable education while addressing the challenge of limited internet access in remote areas."
   },
   "box2": {
     "name": "KCS x Nucats",
-    "text": "This was a In-house challenge hosted by Kerridge Commercial systems. The case-studies consisted of developing various shared services aimed around the theme of various operation current occurring within the organisation",
-    "description": "My chosen project was a shared service, which displayed 3D visual information of the most optimal arrangement of items in a container. Soon after starting this project, I soon realised that this project was synonymous to an infamously difficult NP-hard problem in computer science, meaning the problem could only be solve in Non-deterministic Polynomial time. As a result I decided to develop a 2D box sorting algorithm using linear Probability and map the algorithm in 3D space. This project enabled the use of applied mathematical thinking in conjunction with advanced modeling in order to find a semi-optimised solution to an otherwise seemingly impossible problem."
-
+    "text": "This was a In-house challenge hosted by Kerridge Commercial systems. With a variety of case studies consisting of developing shared services aimed towards the theme of operations and projects currently occurring within the organisation.",
+    "description": "My chosen project was to design a shared service that displays 3D visual information about the most optimal arrangement of items in a container. Shortly after starting this project, I realized that it was related to an infamously difficult NP-hard problem in computer science, meaning the problem can only be solved in non-deterministic polynomial time. As a result, I decided to develop a 2D box sorting algorithm using linear probability and then map this algorithm into a 3D environment. This project allowed me to apply mathematical thinking alongside advanced modeling techniques to find a semi-optimized solution to a problem that initially seemed impossible."
   },
   "box3": {
     "name": "Easy A x Polkadot",
-    "text": "The Easy A x Polkadot hackathon is a world class event, hosted in the heart of London. This event challenges renound participants from various backgrounds to program and pitch ideas based around upcoming Web3 technology ",
-    "description": "Easy A encouraged project from all areas of Web3, but required all projects to be based around the application of smart contracts. In a team of 4 our project was based around the implementation of giving users access to trade and exchange digital assets across multiple platforms in a variety of fields, ranging from decentralised finance to gaming, acting as a way to improve flexibility of exchange away from otherwise centralised systems"
-
+    "text": "The Easy A x Polkadot hackathon was a world class event, hosted in the heart of London. This event challenged renowned participants from various backgrounds to program and pitch possible ventures based around upcoming Web3 technology.",
+    "description": "The Easy A team encouraged projects across all areas of Web3 development, but required that each project be centered on the application of smart contracts. Our project, developed as a team of four, focused on enabling users to trade and exchange digital assets across multiple platforms in various fields, including decentralized finance and gaming. This approach aims to enhance the flexibility of exchanges, moving away from centralized systems."
   },
   "box4": {
     "name": "Dreamcode",
-    "text": "The dreamcode hackathon was held in collaboration with `Stream`, an organisational collaboration of major water companies in the UK with the goal of improving UK water ways through data analysis.",
-    "description": "The hackathon touched on environmentally present issues, ranging from storm overflow, water pollution, and large scale flooding. My project being a platform which used readily available data on the local waterways, in order to identify possible causes of bacterial contamination, uniquely tailored to the water body. The platform engaged the use of Education, data communication, and incentive to local governmental bodies to aid citizen scientist to in providing viable solution in solving pressing environmental issues."
-
+    "text": "The dreamcode hackathon was held in collaboration with 'Stream', an organisational collaboration of major water companies in the UK, with the goal of improving UK water ways through data analysis.",
+    "description": "The hackathon focused on pressing environmental issues such as stormwater overflow, water pollution, and large-scale flooding. Using ArcGIS (a Geographic Information System), participants developed a prototype software platform aimed at utilizing readily available data on local waterways. This platform's goal is to identify potential sources of bacterial contamination, specifically tailored to each water body. It will incorporate educational resources and data communication, serving as an incentive for local government bodies to collaborate with citizen scientists in finding effective solutions to urgent environmental challenges."
   },
   "box5": {
   "name": "Imperial S-REPLS",
   "text": "The South England Regional Programming Language Seminar was an event held at Imperial College London featuring the latest advancements in the semantics and information of programming languages.",
-    "description": "The event featured industry professionals from Kings College London, Meta, The university of Oxford, Cambridge and other Imperial researchers, speaking on programming languages in both theoretical and application areas  "
+    "description": "The event featured industry professionals from the University of Oxford, the University of Cambridge, Meta, King's College London, and other researchers from Imperial College. They spoke on programming languages in both theoretical and application areas, such as abstraction, formalization, and LLM quantization."
   },
   "box6": {
-  "name": "Kings College Cambridge Entrepreneurship lab",
-  "text": "I am ecstatic to be 1 of 30 selected students, from thousands of talented individuals to participate at the `LLM x LAW` hackathon, part of the prestigious King's College Entrepreneurship lab. Devising practical end to end solutions to pressing issues in the field of Law.",
-  "description" : "This event has yet to come, hence the card will be updated thereafter."
+  "name": "University of Cambridge, Entrepreneurship lab",
+  "text": "I am ecstatic to be 1 of 30 selected students, from thousands of talented individuals to participate at the `LLM x LAW` hackathon, which is part of the prestigious King's College Cambridge Entrepreneurship lab. Devising practical end to end solutions to pressing issues in the field of Law.",
+  "description" : "This upcoming event is said to feature workshops and lightning talks for the chosen participants {This card will be updated in due course.}"
   }
 }

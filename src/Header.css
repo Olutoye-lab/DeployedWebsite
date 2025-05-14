@@ -12,6 +12,7 @@
 }
 
 .header {
+    height: 13vh;
     display: flex;
     flex-direction: row;
 }

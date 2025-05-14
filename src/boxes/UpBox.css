@@ -1,20 +1,24 @@
 .float {
+    position: absolute;
     display: flex;
     margin-left: 20vw;
     width : 60vw;
-    height: 550px;
+    height: 60%;
     background-color: navajowhite;
     border-radius: 40px;
     cursor: cell;
+    z-index: 2;
 }
 .card-header {
+    max-height: 40%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
 }
 .card-header-top {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 70%;
 }

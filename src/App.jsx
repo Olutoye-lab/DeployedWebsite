@@ -54,15 +54,17 @@ function App() {
     const {contextSafe} = useGSAP();
 
 
-    const forward = contextSafe(() => {
-        setDistance(prev => prev + boxSize + gapSize)
-        setIndex(prev => prev - 1);
+    const back = contextSafe(() => {
 
         if (distance >= (boxSize + gapSize)) {
             setDistance(boxSize + gapSize)
+        } else {
+            setDistance(prev => prev + boxSize + gapSize)
         }
-        if (index < 0) {
+        if (index <= 0) {
             setIndex(0)
+        } else {
+            setIndex(prev => prev - 1);
         }
 
     });
@@ -82,25 +84,25 @@ function App() {
         timeline.play()
     },[distance])
 
-    const back = contextSafe(() => {
-        setDistance(prev => prev - boxSize - gapSize)
-        setIndex(prev => prev + 1);
-
+    const forward = contextSafe(() => {
         if (distance <= (boxSize + gapSize)*-4) {
             setDistance((boxSize + gapSize)*-4)
+        } else {
+            setDistance(prev => prev - boxSize - gapSize)
         }
 
-        if (index > arr.length - 1) {
+        if (index >= arr.length - 1) {
             setIndex(arr.length - 1)
+        } else {
+            setIndex(prev => prev + 1);
         }
 
     })
 
     const expand = contextSafe((event) => {
-        const tween = gsap.to(".float", {y: -680, duration: 0.5,  opacity: 1, ease: "circ"});
+        const tween = gsap.to(".float", {bottom: "25%", duration: 0.5,  opacity: 1, ease: "circ"});
         tween.play()
         const tag = event.currentTarget.className.slice(0, 4)
-        console.log(tag);
         SetText(data[tag]);
     })
 
@@ -129,8 +131,8 @@ function App() {
         </div>
         <div className="button-group">
             <div className="button-container">
-                <Button onClick={forward}><BiLeftArrow /></Button>
-                <Button onClick={back}><BiRightArrow /></Button>
+                <Button variant="surface" style={{boxShadow: "5px 10px"}} onClick={back}><BiLeftArrow /></Button>
+                <Button variant="surface" style={{boxShadow: "5px 10px"}} onClick={forward}><BiRightArrow /></Button>
             </div>
         </div>
         <UpBox props={text}/>

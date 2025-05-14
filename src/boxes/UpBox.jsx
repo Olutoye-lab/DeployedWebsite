@@ -8,29 +8,28 @@ function UpBox({props}) {
     const {contextSafe} = useGSAP();
 
     const down = contextSafe(() => {
-        const tween = gsap.to(".float", {y: 0, duration: 0.3, opacity: 1});
+        const tween = gsap.to(".float", {bottom: "-65%", duration: 0.3, opacity: 1});
         tween.play()
     })
     return (
         <>
-            <div>
                 <div onClick={down}
                     className="float">
                     <Card.Root width="66%" borderRadius="40px" marginLeft="16%" >
-                        <Card.Body gap="2">
+                        <Card.Body gap="2" display="flex">
                             <div className="card-header">
-                                <Avatar.Root size="sm" shape="rounded" width="130px" height="130px">
+                                <Avatar.Root size="sm" shape="rounded" width="130px" height="100%">
                                     <Avatar.Image src="https://picsum.photos/200/300" />
                                     <Avatar.Fallback name={props.name} />
                                 </Avatar.Root>
                                 <div className="card-header-top">
                                     <Card.Title mt="2" width="100%" height="40px" >{props.name}</Card.Title>
-                                    <Card.Description >
+                                    <Card.Description fontFamily="monospace" fontSize="15px">
                                         {props.text}
                                     </Card.Description>
                                 </div>
                             </div>
-                            <Card.Description>
+                            <Card.Description fontFamily="monospace" fontSize="15px">
                                 {props.description}
                             </Card.Description>
                         </Card.Body>
@@ -38,7 +37,6 @@ function UpBox({props}) {
                         </Card.Footer>
                     </Card.Root>
                 </div>
-            </div>
         </>
     )
 }

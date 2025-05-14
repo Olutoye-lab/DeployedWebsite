@@ -1,4 +1,4 @@
-import { Button, Popover, Portal } from "@chakra-ui/react"
+import {Button, Card, CardBody, Popover, Portal} from "@chakra-ui/react"
 import { useState } from "react"
 
 export default function Popout ({title}) {
@@ -6,7 +6,7 @@ export default function Popout ({title}) {
     return (
         <Popover.Root open={open} onOpenChange={(e) => setOpen(e.open)}>
             <Popover.Trigger asChild>
-                <Button style={{ boxShadow: "10px 10px" }}>
+                <Button size="lg" style={{ boxShadow: "10px 10px" }}>
                     {title.name}
                 </Button>
             </Popover.Trigger>
