@@ -17,7 +17,7 @@ export default function Info () {
     const [open, setOpen] = useState(false)
 
     const info = {
-        "title": "INFO",
+        "title": "Info",
         "name" : "Olutoye Eresanmi. ",
         "Bio": "I am currently studying at a Russell Group University, pursuing a bachelor's degree in Computer Science, specialising in Software Engineering.\n" +
             "I place a strong interest in Programming, Mathematics and Physics, while being fascinated by Artificial Intelligence, specifically in the areas of Machine Learning and Agent-based models.\n" +

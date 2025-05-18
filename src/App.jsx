@@ -1,7 +1,7 @@
 import './App.css'
 import {gsap} from "gsap"
 import { useGSAP } from '@gsap/react';
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useMemo, useRef, useState} from 'react';
 import {Button} from "@chakra-ui/react";
 import {BiLeftArrow, BiRightArrow} from "react-icons/bi";
 import Header from "./Header";
@@ -36,8 +36,15 @@ function App() {
     const box6 = useRef(null);
     const boxSize = 400
     const gapSize = 200
-    const arr = [Med_back, KCS_cubes, EasyA_back, Dreamcode_back, IMP_back, LLM_back]
-    const arr2 = ["#3d1c83", "#5585b6", "#2b2b2b", "#d8ced4", "#0194d9", "#d6c5d7"]
+
+    const arr = useMemo(() => {
+         return [Med_back, KCS_cubes, EasyA_back, Dreamcode_back, IMP_back, LLM_back]
+    }, []);
+
+    const arr2 = useMemo(() => {
+        return ["#3d1c83", "#5585b6", "#2b2b2b", "#d8ced4", "#0194d9", "#d6c5d7"]
+    }, []);
+
 
 
     useEffect(() => {
