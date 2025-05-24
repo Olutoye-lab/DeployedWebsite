@@ -14,3 +14,4 @@ If you are developing a production application, we recommend using TypeScript wi
 
 -- Test1
 -- Test2
+-- Test3
